@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAJVaPCy1+CZ35JYOG0dAea4wDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkZjZjY2Q3NDYtMzRkOC00MzVmLWFjMTUtNWRlNTFlZjVmYzk1
+    MB4XDTE5MDYxNzE5NTYzNVoXDTI0MDYxNTIwNTYzNVowLzEtMCsGA1UEAxMkZjZj
+    Y2Q3NDYtMzRkOC00MzVmLWFjMTUtNWRlNTFlZjVmYzk1MIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAz+LNCPC9XhhuHHkRw+wo7y9xmJ1pKBvwFemcbkor
+    R5wttWAVy6/6KSFPXHHOBDkLDpifvVI5zL1qCA4yR5ORuud1UkwDOz9/KgPiSMw+
+    DV06lhLBsSvXabWY8ahqVmi9mT35Gtg15eGBeUZgqt+bYNlQlnnABwIOX+qo9dag
+    cW/R8btsYp/NIsIydxx6BrXbMEBCGZ+pBVmD7XNCS/k5dHrWFjMCB0p38J0mtAR6
+    uuPDJNiZ6CcS4Hwq2RZ0f0FZBULYy9aFA5yqEXT55reKDLDobkX5p/ycCNIwz1aN
+    +0Tc0WjNWkZXO4nL7rPvZtemMl5lwDsGlLUPBTI5qE9XnwIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    iOvwdkv6NuNeVOA1KpfGLJfLKlXCWAQ0dIIxqkHwtZbLHY9EO+rKwjqjlJjLeggV
+    6qqcJ19v6nWr7IU3r2C39nvo7A/DwPXFZDuFG+05XQoKOlGrlk0HXrP+sK2EIM/E
+    QFeA4ZfXXqcMYRL3v2pN9k17DxQc+3fwrKbB+zYsVWAMeqEymNX2UpEcVotllEQF
+    BrpigXKtv9Pt3QA/H13A8BGnGGDioIm5XSsjDVrD+tGkAQ4y2TZrrsUbIKUlkFil
+    n0Z7yTZ0HXkUoR9mbU1qV93rjwEPGRnoAEzZPra4qeAHih0TmkGAKtVdB9vIkI8p
+    KDbdCY+p8WRkqRxCphnGlg==
+    -----END CERTIFICATE-----
+  clusterName: mpa-cluster
+  jx-install-version: 2.0.288
+  kubeProvider: gke
+  projectID: mpailloncy-playground
+  region: ""
+  secretsLocation: vault
+  server: https://35.246.44.136
+  systemVaultName: jx-vault-mpa-cluster
+  zone: europe-west2-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
